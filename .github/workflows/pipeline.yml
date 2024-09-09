@@ -41,6 +41,7 @@ jobs:
     - name: Build Image
       uses: testifysec/witness-run-action@79320a907f611f2fb40ced8e13c66af988b2d9db # v0.2.2
       with:
+        version: 0.6.3-beta
         archivista-server: "https://judge-api.aws-sandbox-staging.testifysec.dev"
         step: build-image
         attestations: "environment git github slsa oci"
